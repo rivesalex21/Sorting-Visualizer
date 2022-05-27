@@ -20,8 +20,8 @@ selection.addEventListener('click',activateButton)
 insertion.addEventListener('click',activateButton)
 bogo.addEventListener('click',activateButton)
 quick.addEventListener('click',activateButton)
-reset.addEventListener('click',activateButton)
-randomize.addEventListener('click',activateButton)
+//reset.addEventListener('click',activateButton)
+//randomize.addEventListener('click',activateButton)
 small.addEventListener('click',activateButton)
 medium.addEventListener('click',activateButton)
 large.addEventListener('click',activateButton)
@@ -33,8 +33,22 @@ xxxl.addEventListener('click',activateButton)
 
 
 function activateButton(event) {
+    // Create the target
     let target = event.target
-    target.style.color = 'gray'
-    target.style.background = 'cyan'
+    
+    // Create the parent node
+    parent = target.parentNode
+    
+    // Remove current activation
+    removeActivate(parent)
+    target.className = target.className + ' btn-activated'
 }
 
+function removeActivate(parent) {
+    for (i=0;i<parent.children.length;i++) {
+        if (parent.children[i].className.includes('btn-activated')) {
+            newName = parent.children[i].className.replace(' btn-activated','')
+            parent.children[i].className = newName
+        }
+    }
+}

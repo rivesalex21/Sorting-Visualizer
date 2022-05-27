@@ -23,3 +23,19 @@
     border: 1px solid black;
     background-color: red;
 }
+
+.btn-activated {
+    color:gray;
+    background-color: cyan;
+}
+
+#btn-sort {
+    background-color: tomato;
+    width: 100px;
+    font-weight: bold;
+}
+
+#btn-generate {
+    background-color: lightgreen;
+    margin-right: 5px;
+}

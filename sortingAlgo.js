@@ -31,15 +31,6 @@ async function basicSort(elements,delay,baseColor,checkColor) {
         }
         colorReset(elements,baseColor)
     }
-
-    for (i=0; i<elements.length-1; i++) {
-        elements[i].style.background = checkColor
-        await sleep(delay)
-
-        if (getHeight(elements[i]) > getHeight(elements[i+1])){
-            anchor.insertBefore(elements[i+1],elements[i])
-        }
-    }
 }
 
 function Randomize(num,max_height) {
@@ -53,3 +44,12 @@ function Randomize(num,max_height) {
     }
 
 }
+
+class Sorter {
+    constructor(_sorter,_size){
+        this.sorter = _sorter
+        this.size = _size
+    }
+}
+
+let sorterParams = new Sorter('basic',100)
