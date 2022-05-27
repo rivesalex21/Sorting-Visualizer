@@ -1,0 +1,25 @@
+:root {
+    --anchor: 5px;
+}
+
+.main-cont {
+    height: 600px;
+    background-color: lightblue;
+    display: flex;
+}
+
+.column-anchor {
+    display: flex;
+    background-color: blue;
+    width: 90%;
+    height: var(--anchor);
+    margin: 10px auto;
+    justify-content: space-evenly;
+}
+
+.cols {
+    margin-top: var(--anchor);
+    width: 5px;
+    border: 1px solid black;
+    background-color: red;
+}

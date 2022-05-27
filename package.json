@@ -1,0 +1,22 @@
+{
+  "name": "sorting-visualizer",
+  "version": "1.0.0",
+  "description": "A visual representation of what sorting algos do.",
+  "main": "buttonSelection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivesalex21/Sorting-Visualizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rivesalex21/Sorting-Visualizer/issues"
+  },
+  "homepage": "https://github.com/rivesalex21/Sorting-Visualizer#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
