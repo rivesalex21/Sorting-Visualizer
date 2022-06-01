@@ -110,7 +110,21 @@ function startSort(sorter, delay) {
             break;
         case 'bubble':
             bubbleSort(elements,currentDelay)
-            break;s
+            break;
+        case 'revised':
+            revisedBubble(elements,currentDelay)
+            break;
+        case 'selection':
+            selectionSort(elements,currentDelay)
+            break;
+        case 'insertion':
+            insertionSort(elements,currentDelay)
+            break;
+        case 'bogo':
+            bogoSort(elements,currentDelay)
+            break;
+            
+
         default:
             alert('Chosen Settings do not work.')
     }
