@@ -123,6 +123,9 @@ function startSort(sorter, delay) {
         case 'bogo':
             bogoSort(elements,currentDelay)
             break;
+        case 'quick':
+            quickSort(elements,currentDelay)
+            break;
             
 
         default:
