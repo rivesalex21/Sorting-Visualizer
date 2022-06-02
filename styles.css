@@ -4,7 +4,7 @@
 
 .main-cont {
     height: 600px;
-    background-color: lightblue;
+    background-color:lightblue;
     display: flex;
 }
 
@@ -19,9 +19,9 @@
 
 .cols {
     margin-top: var(--anchor);
-    width: 5px;
+    width: 10px;
     border: 1px solid black;
-    background-color: red;
+    background-color: tomato;
 }
 
 .btn-activated {
@@ -38,4 +38,19 @@
 #btn-generate {
     background-color: lightgreen;
     margin-right: 5px;
+}
+
+#delay {
+    width: 100px;
+    height: 70%;
+    margin: auto 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
