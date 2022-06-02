@@ -1,10 +1,10 @@
 const anchor = document.getElementById('anchor')
 let elements = document.getElementsByClassName('cols')
 
-const BASE_COLOR = 'tomato'
-const REF_COLOR  = 'lightyellow'
-const COMP_COLOR = 'lightgreen'
-const NEW_MIN = 'green'
+const BASE_COLOR = '#dc3545'
+const REF_COLOR  = '#ffc107'
+const COMP_COLOR = '#20c997'
+const NEW_MIN = '#198754'
 
 // Basic sort: A simple approach to sorting that doesn't always work. 
 async function basicSort(elements,delay) {
