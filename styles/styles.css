@@ -34,6 +34,8 @@
     font-weight: bold;
     color: var(--bs-light);
     border: 2px solid var(--bs-gray-700);
+    border-radius: 10px;
+    margin-left: 3px;
 }
 
 #btn-sort:hover, #btn-generate:hover {
@@ -50,6 +52,7 @@
     margin-right: 5px;
     font-weight: bold;
     color: var(--bs-light);
+    border-radius: 10px;
 }
 
 #delay {
@@ -57,7 +60,7 @@
     height: 80%;
     margin: auto 5px;
     background-color: var(--bs-gray-400);
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: center;
     font-size: small;
     padding: .125rem 0.25rem;
@@ -94,4 +97,19 @@ input::-webkit-inner-spin-button {
 
 .btn:focus {
     box-shadow: none;
+}
+
+
+#btn-reset {
+    background-color: var(--bs-yellow);
+    border-radius: 10px;
+}
+#btn-reset:hover {
+    color: var(--bs-light);
+    filter: opacity(100%);
+}
+
+#btn-reset:active {
+    filter: contrast(150%);
+    transition: 0ms;
 }

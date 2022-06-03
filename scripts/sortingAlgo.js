@@ -56,6 +56,7 @@ async function revisedBubble(elements,delay) {
     }
 }
 
+
 // Selection Sort
 async function selectionSort(elements,delay){
     let newMin = false
@@ -123,6 +124,3 @@ async function bogoSort(elements,delay) {
         }
     }
 }
-
-
-// Quick Sort

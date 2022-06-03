@@ -29,7 +29,6 @@ selection.addEventListener('click',activateButton)
 insertion.addEventListener('click',activateButton)
 bogo.addEventListener('click',activateButton)
 quick.addEventListener('click',activateButton)
-//reset.addEventListener('click',activateButton)
 //randomize.addEventListener('click',activateButton)
 small.addEventListener('click',activateButton)
 medium.addEventListener('click',activateButton)
@@ -43,6 +42,10 @@ generate.addEventListener('click',() => {
 })
 sort.addEventListener('click',() => {
     startSort(sortingReq.sortingAlgo,delay.value)
+})
+
+reset.addEventListener('click',() => {
+    applyCopy(currentElements['currentCopy'])
 })
 
 const SIZES =  {
@@ -82,6 +85,7 @@ function generateBars(size) {
         case 'small':
             removeCols()
             Randomize(SIZES['small'],HEIGHT)
+            createCopy(elements)
             break;
         case 'medium':
             removeCols()
@@ -100,6 +104,8 @@ function generateBars(size) {
             Randomize(SIZES['xxxl'],HEIGHT)
             break;     
     }
+
+    currentElements.currentCopy = createCopy(elements)
 }
 
 function startSort(sorter, delay) {

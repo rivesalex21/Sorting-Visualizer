@@ -47,4 +47,22 @@ function shuffle(elements) {
   
   }
 
+  function createCopy(elements) {
+      let currentCopy = []
+      for (let i = 0 ; i < elements.length ; i++) {
+          currentCopy.push(elements[i])
+      }
+      return currentCopy
+  }
 
+  function applyCopy(copy) {
+      removeCols()
+      for(let i = 0 ; i < copy.length ; i++) {
+          console.log(anchor)
+          anchor.appendChild(copy[i])
+      }
+  }
+
+const currentElements = {
+    'currentCopy': null
+}
